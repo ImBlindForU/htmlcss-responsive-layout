@@ -16,7 +16,7 @@ img{
     --primary-col: #0084FD;
     --primary-col-light: #B5DDFF;
     --secondary-col: #9792E4;
-    
+    --title-color: #FDC15F;
     /* common */
     --white:white;
     --black:black;
@@ -152,6 +152,18 @@ header nav{
     border-radius: 50%;
 }
 
+
+/* sesta sezione */
+
+#sesta .container{
+    background-color: var(--secondary-col);
+    color: var(--white);
+    text-align: center;
+}
+
+#sesta h1{
+    color: var(--title-color);
+}
 
 /* mediaquery */
 /* tablet */
