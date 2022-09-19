@@ -17,6 +17,7 @@ img{
     --primary-col-light: #B5DDFF;
     --secondary-col: #9792E4;
     --title-color: #FDC15F;
+    --footer-col: #333333;
     /* common */
     --white:white;
     --black:black;
@@ -32,7 +33,7 @@ html{
 
 .container{
     width: 100%;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
 }
 
 .card{
@@ -74,7 +75,7 @@ header nav{
 /* about section */
 
 #about{
-    padding-top: 6rem;
+    padding-top: 8rem;
 }
 
 #about .card{
@@ -154,7 +155,9 @@ header nav{
 
 
 /* sesta sezione */
-
+#sesta .big-container{
+    background-color: var(--secondary-col);
+}
 #sesta .container{
     background-color: var(--secondary-col);
     color: var(--white);
@@ -164,6 +167,26 @@ header nav{
 #sesta h1{
     color: var(--title-color);
 }
+
+
+
+/* footer */
+
+footer{
+    background-color:var(--footer-col) ;
+    color: var(--white);
+    text-align:center;
+}
+
+.botttom a{
+    color: var(--secondary-col);
+}
+
+footer .container .top,.bottom{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
 
 /* mediaquery */
 /* tablet */
@@ -207,6 +230,20 @@ header nav{
     #quinta .container{
         display: flex;
     }
+
+    /* sesta sezione */
+
+    #sesta .container{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* footer */
+
+    footer .container{
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 /* desktop */
 @media screen and (min-width:992px){
@@ -216,7 +253,7 @@ header nav{
         width: 80%;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 0;
+        padding: 2rem 1rem;
         /* debig */
         border: 1px solid black;
     }
