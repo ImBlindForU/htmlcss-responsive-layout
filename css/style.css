@@ -15,10 +15,14 @@ img{
     /* palette */
     --primary-col: #0084FD;
     --primary-col-light: #B5DDFF;
-  
-    --secondary-col: #
-    --secondary-col-light:
- 
+    --secondary-col: #9792E4;
+    
+    /* common */
+    --white:white;
+    --black:black;
+
+    /* spaces */
+    --grid-gutter: 1.5rem;
 }
 /* command */
 html{
@@ -88,6 +92,54 @@ header nav{
     background-color: lightgreen;
 }
 
+
+/* seconda sezione */
+#secondary  p{
+    margin-top: 1em;
+}
+#secondary  h2{
+    margin-top: 1em;
+}
+
+#secondary .container{
+    background-color: var(--secondary-col);
+    color:var(--white);
+}
+
+#secondary .card:last-child{
+    background-color:var(--white);
+    color: var(--black);
+}
+
+/* terza sezione */
+
+#terza .card{
+    background-color: var(--secondary-col);
+    color: var(--white);
+    margin-top: 1em;
+}
+
+
+#terza .image-terza-sezione img{
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/* quarta sezione */
+
+#quarta .container{
+    background-color: var(--secondary-col);
+    color: var(--white);
+}
+
+#quarta .card{
+    background-color: var(--white);
+    color: var(--secondary-col);
+}
+
+#quarta .card p{
+    color: var(--black);
+}
 /* mediaquery */
 /* tablet */
 @media screen and (min-width:768px){
@@ -96,14 +148,25 @@ header nav{
     #about .cards{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: var(--grid-gutter);
     }
     #about .card{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - var(--grid-gutter) * 2 / 3);
+        margin-bottom: 0;
     }
 
     #about .card:first-child{
-        width: calc(100% / 3 * 2);
+        width: calc(100% / 3 * 2 - var(--grid-gutter) / 3);
     }
+
+    /* terza sezione */
+
+    #terza .card{
+        display: flex;
+    }
+    
+    
 }
 /* desktop */
 @media screen and (min-width:992px){
@@ -113,7 +176,7 @@ header nav{
         width: 80%;
         max-width: 1000px;
         margin: 0 auto;
-
+        padding: 0;
         /* debig */
         border: 1px solid black;
     }
@@ -138,6 +201,30 @@ header nav{
 
     /* main */
     /* about section */
+
+    #about .card:first-child{
+        display: flex;
+
+    }
+
+    #about .container{
+        padding-bottom: 2rem;
+    }
+
+    .text-wrapper{
+        width: 50%;
+        /* padding: 0.5rem; */
+        margin-bottom: 0;
+    }
+
+    /* seconda sezione */
+
+    #secondary .container{
+        display: flex;
+        padding-top: 2rem;
+    }
+
+    /* terza sezione */
 
 }
 
