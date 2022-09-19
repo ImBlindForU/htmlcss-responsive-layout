@@ -135,6 +135,7 @@ header nav{
 #quarta .card{
     background-color: var(--white);
     color: var(--secondary-col);
+    margin-top: 1rem;
 }
 
 #quarta .card p{
@@ -166,6 +167,16 @@ header nav{
         display: flex;
     }
     
+    /* quarta sezione */
+    #quarta .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #quarta .card{
+        width: calc(100% / 2 - var(--grid-gutter));
+        margin-left: var(--grid-gutter);
+    }
     
 }
 /* desktop */
@@ -224,7 +235,11 @@ header nav{
         padding-top: 2rem;
     }
 
-    /* terza sezione */
+    /* quarta sezione */
 
+    #quarta .card{
+        width: calc(100% / 3 - var(--grid-gutter));
+        margin-left: var(--grid-gutter);
+    }
 }
 
