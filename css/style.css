@@ -1,0 +1,54 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* variabili */
+
+:root{
+    /* palette */
+    --primary-col: #0084FD;
+    --primary-col-light: #
+    --secondary-col: #
+    --secondary-col-light:
+ 
+}
+/* command */
+html{
+    /* fontfasmili */
+    font-size:100%;
+}
+
+.container{
+    width: 100%;
+    padding: 0 1rem;
+}
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    color: white;
+    padding: 1rem 0rem;
+    background-color: var(--primary-col);
+    
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .hamburger-menu{
+    font-size: 1.5rem;
+}
