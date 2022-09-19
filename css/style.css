@@ -52,3 +52,43 @@ header .container{
 header .hamburger-menu{
     font-size: 1.5rem;
 }
+header nav{
+    display: none;
+}
+
+/* header mediaquery */
+/* tablet */
+@media screen and (min-width:768px){
+
+}
+/* desktop */
+@media screen and (min-width:992px){
+
+    /* common */
+    .container{
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        /* debig */
+        border: 1px solid black;
+    }
+
+    /* header */
+
+    header .hamburger-menu{
+        display: none;
+    }
+
+    header nav{
+        display: block;
+    }
+    header ul{
+        display: flex;
+        list-style: none;
+    }
+
+    header li{
+        margin-left: 1em;
+    }
+}
