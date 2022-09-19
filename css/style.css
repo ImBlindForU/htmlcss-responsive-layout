@@ -141,6 +141,18 @@ header nav{
 #quarta .card p{
     color: var(--black);
 }
+
+/* quinta sezione */
+
+#quinta h2{
+    color: var(--secondary-col);
+}
+
+#quinta .image img{
+    border-radius: 50%;
+}
+
+
 /* mediaquery */
 /* tablet */
 @media screen and (min-width:768px){
@@ -172,12 +184,17 @@ header nav{
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     #quarta .card{
         width: calc(100% / 2 - var(--grid-gutter));
         margin-left: var(--grid-gutter);
     }
     
+    /* quinta sezione */
+
+    #quinta .container{
+        display: flex;
+    }
 }
 /* desktop */
 @media screen and (min-width:992px){
@@ -240,6 +257,12 @@ header nav{
     #quarta .card{
         width: calc(100% / 3 - var(--grid-gutter));
         margin-left: var(--grid-gutter);
+    }
+
+    /* quinta sezione */
+
+    #quinta .text-wrapper{
+        width: 100%;
     }
 }
 
