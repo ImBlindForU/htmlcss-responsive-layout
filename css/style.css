@@ -199,29 +199,30 @@ header nav{
 
 .image-terza-sezione{
     margin-right: 2rem;
-    border: 1px solid black;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
 }
 .uno{
     background-image: url(../img/testimonial1.jpg);
-    background-image: cover;
+    background-size: cover;
     background-position: center;
 }
 .due{
-    background-image: url(../img/testimonial1.jpg);
-    background-image: cover;
+    background-image: url(../img/testimonial2.jpg);
+    background-size: cover;
     background-position: center;
 }
 .tre{
-    background-image: url(../img/testimonial1.jpg);
-    background-image: cover;
+    background-image: url(../img/testimonial3.jpg);
+    background-size: cover;
     background-position: center;
 }
 
 .square{
     width: 200px;
     height: 200px;
-    
+    border-radius: 50%;
 }
 
 .text-terza-sezione h3,p{
@@ -394,6 +395,12 @@ footer .big-container{
     .testimonial-intrudaction-text p{
         text-align: center;
     }
+
+    .square{
+        width: 200px;
+        height: 200px;
+    }
+    
 
     /* quarta sezione */
     #quarta .cards{
