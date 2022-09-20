@@ -31,11 +31,7 @@ img{
 html{
     /* fontfasmili */
     font-size:100%;
-    font-family: 'Flamenco', cursive;
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .container{
@@ -89,13 +85,23 @@ header nav{
 #about .card{
     background-color: var(--primary-col-light);
     padding-bottom: 0;
+    text-align: center;
 }
-
+#about .card:first-child{
+    text-align: start;
+}
 .text-wrapper{
     margin-bottom: 1em;
     
 }
 
+.img-wrapper{
+    display: flex;
+}
+.img-wrapper img{
+    display: block;
+    align-self: flex-end;
+}
 #about .card h2,i{
     color: var(--text-tittle);
 }
@@ -123,7 +129,8 @@ header nav{
 
 .icon{
     text-align: center;
-    line-height: 50%;
+    font-size: 7rem;
+    
 }
 /* seconda sezione */
 #secondary  p{
@@ -163,7 +170,7 @@ header nav{
     color: var(--white);
     margin-top: 1em;
 }
-.testimonial-intrudaction-text{
+.testimonial-intrudaction-text .first-text,h2,p{
     text-align: center;
 }
 
@@ -172,6 +179,13 @@ header nav{
     padding: 1rem;
 }
 
+.text-terza-sezione h3,p{
+    padding-top: 1rem;
+    text-align: center;
+}
+.testimonial-intrudaction-text h2{
+    color: var(--secondary-col);
+}
 /* quarta sezione */
 
 #quarta .container{
@@ -263,8 +277,16 @@ footer .big-container{
 
     #terza .card{
         display: flex;
+        align-items: center;
     }
     
+    .text-terza-sezione h3,p{
+        padding-top: 1rem;
+        text-align: start;
+    }
+    .testimonial-intrudaction-text p{
+        text-align: center;
+    }
     /* quarta sezione */
     #quarta .cards{
         display: flex;
