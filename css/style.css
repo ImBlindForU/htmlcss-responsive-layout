@@ -31,7 +31,11 @@ img{
 html{
     /* fontfasmili */
     font-size:100%;
-    font-family: sans-serif;
+    font-family: 'Flamenco', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container{
@@ -43,6 +47,9 @@ html{
     border-radius: 20px;
     padding: 1em;
     margin-bottom: 1em;
+}
+.big-container{
+    background-color: var(--secondary-col);
 }
 /* header */
 
@@ -96,12 +103,10 @@ header nav{
 #about .card p{
     line-height: 1.5em;
 }
-#about .card button{
-    margin-top: 1rem;
-}
 
 #about .card p, h2{
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .text-wrapper button{
@@ -127,6 +132,9 @@ header nav{
 #secondary  h2{
     margin-top: 1em;
 }
+#secondary  i{
+    margin-top: 1em;
+}
 
 #secondary .container{
     background-color: var(--secondary-col);
@@ -136,6 +144,16 @@ header nav{
 #secondary .card:last-child{
     background-color:var(--white);
     color: var(--black);
+    margin-top: 20%;
+}
+#secondary .card{
+    text-align: center;
+}
+#secondary i{
+    background-color: var(--secondary-col);
+    border-radius: 50%;
+    padding: 1rem;
+    
 }
 
 /* terza sezione */
@@ -145,7 +163,9 @@ header nav{
     color: var(--white);
     margin-top: 1em;
 }
-
+.testimonial-intrudaction-text{
+    text-align: center;
+}
 
 #terza .image-terza-sezione img{
     border-radius: 50%;
@@ -181,9 +201,7 @@ header nav{
 
 
 /* sesta sezione */
-#sesta .big-container{
-    background-color: var(--secondary-col);
-}
+
 #sesta .container{
     background-color: var(--secondary-col);
     color: var(--white);
@@ -213,6 +231,9 @@ footer .container .top,.bottom{
     padding-top: 1rem;
 }
 
+footer .big-container{
+    background-color:  var(--footer-col);
+}
 
 /* mediaquery */
 /* tablet */
