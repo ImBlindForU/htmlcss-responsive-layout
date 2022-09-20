@@ -70,6 +70,9 @@ header .container{
 header .hamburger-menu{
     font-size: 1.5rem;
 }
+.hamburger-menu i{
+    color: var(--white);
+}
 header nav{
     display: none;
 }
@@ -169,16 +172,23 @@ header nav{
     background-color: var(--secondary-col);
     color: var(--white);
     margin-top: 1em;
+    
 }
 .testimonial-intrudaction-text .first-text,h2,p{
     text-align: center;
 }
 
-#terza .image-terza-sezione img{
+#terza .image-terza-sezione .primo img{ 
+    width: 100%;
+    height: 10vw;
     border-radius: 50%;
-    padding: 1rem;
+    object-fit: cover;
 }
-
+#terza .image-terza-sezione{
+    display: flex;
+    justify-content: center;
+    
+}
 .text-terza-sezione h3,p{
     padding-top: 1rem;
     text-align: center;
@@ -197,22 +207,68 @@ header nav{
     background-color: var(--white);
     color: var(--secondary-col);
     margin-top: 1rem;
+    
 }
-
+#quarta .card h2{
+    text-align: start;
+}
 #quarta .card p{
     color: var(--black);
+    text-align: start;
 }
-
+#quarta h1{
+    font-size: 2.5rem;
+}
+#quarta .card button{
+    background-color: var(--secondary-col);
+    color: var(--white);
+    border: 1px solid var(--secondary-col);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
 /* quinta sezione */
 
 #quinta h2{
     color: var(--secondary-col);
 }
-
+#quinta .image{
+    width: 50%;
+}
 #quinta .image img{
     border-radius: 50%;
 }
 
+#quinta .image button{
+    background-color: var(--secondary-col);
+    color: var(--white);
+    border: 1px solid var(--secondary-col);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+}
+
+#quinta .image h2{
+    text-align: start;
+}
+
+#quinta .text-wrapper h2,p{
+    text-align: start;
+    padding-right: 4rem;
+}
+#quinta .image-img{
+    position: relative;
+    
+}
+#quinta .image .virgolette{
+    font-size: 10rem;
+    color: var(--secondary-col);
+    position: absolute;
+    top: -50%;
+    right: 0;
+    transform: rotate(180deg);
+    
+}
 
 /* sesta sezione */
 
@@ -226,8 +282,20 @@ header nav{
     color: var(--title-color);
 }
 
+#sesta .container P{
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 1rem;
+}
 
-
+#sesta .container button{
+    background-color: var(--white);
+    color: var(--secondary-col);
+    border: 1px solid var(--white);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
 /* footer */
 
 footer{
@@ -243,6 +311,10 @@ footer{
 footer .container .top,.bottom{
     padding-bottom: 1rem;
     padding-top: 1rem;
+}
+footer .container p {
+    text-align: center;
+    padding: 0;
 }
 
 footer .big-container{
@@ -287,6 +359,7 @@ footer .big-container{
     .testimonial-intrudaction-text p{
         text-align: center;
     }
+
     /* quarta sezione */
     #quarta .cards{
         display: flex;
@@ -298,12 +371,16 @@ footer .big-container{
         margin-left: var(--grid-gutter);
     }
     
+    
     /* quinta sezione */
 
     #quinta .container{
         display: flex;
     }
 
+    #quinta .image .virgolette{
+        top: -30%;   
+    }
     /* sesta sezione */
 
     #sesta .container{
